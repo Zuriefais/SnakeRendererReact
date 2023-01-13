@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit'
-import socketReducer from './SocketSlice'
+import pathnameReducer, { pathname } from './PathnameSlice'
 
 export default configureStore({
   reducer: {
-    socket: socketReducer
+    pathname: pathnameReducer
   },
 })
