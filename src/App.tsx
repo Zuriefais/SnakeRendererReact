@@ -1,13 +1,16 @@
 import './App.css'
-import RouterByZuriefais from './RouterByZuriefais';
+import { useRef } from 'react'
+import { Outlet, Link } from 'react-router-dom'
 
 function App() {
   return (
     <div className="App">
-      <header></header>
-      <main><RouterByZuriefais pathname = {location.pathname}/></main>
+      <header>
+        <Link to={"/"}>Main</Link>
+        <Link to={"/About"}>About</Link>
+      </header>
+      <main><Outlet></Outlet></main>
       <footer></footer>
-      
     </div>
   )
 }
