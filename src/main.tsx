@@ -13,6 +13,7 @@ import store from './store'
 import Error404 from './pages/Error404Page'
 import MainPage from './pages/MainPage'
 import About from './pages/About'
+import Game from './pages/Game'
 
 const router = createBrowserRouter([
     {
@@ -25,8 +26,12 @@ const router = createBrowserRouter([
             element: <MainPage />
         },
         {
-            path: "About",
+            path: "/About",
             element: <About />
+        },
+        {
+            path: "/game",
+            element: <Game />
         }
       ],
     },

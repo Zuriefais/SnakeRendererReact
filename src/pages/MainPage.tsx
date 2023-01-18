@@ -3,9 +3,9 @@ import { useState } from "react";
 
 
 export default function MainPage() {
-    const [count, setCount] = useState(0);
+    const [count, setCount] = useState(0)
     function handleClick() {
-        setCount(count + 1);
+        setCount(count + 1)
         console.log("click")
     }
     return (
