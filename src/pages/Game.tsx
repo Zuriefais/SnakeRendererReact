@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { json } from "react-router-dom";
+import './Game.css'
 
 export default function Game() {
     const [ip, setIp] = useState("")
